@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://155xx7s6y6ta"]
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://clni3qdxarl63" path="res://scenes/cube.tscn" id="2_0wfyh"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_yf5fn"]
 size = Vector3(20, 0.2, 20)
@@ -98,3 +99,12 @@ light_energy = 0.683
 shadow_enabled = true
 omni_range = 15.0
 omni_attenuation = 0.01
+
+[node name="Cube1" parent="." unique_id=457449100 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0)
+
+[node name="Cube2" parent="." unique_id=1312304002 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Cube3" parent="." unique_id=132259515 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)

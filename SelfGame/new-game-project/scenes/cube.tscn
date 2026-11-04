@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://clni3qdxarl63"]
+
+[ext_resource type="Script" uid="uid://c8mhimq1ehltn" path="res://scripts/cube.gd" id="1_7ufek"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
+size = Vector3(0.7, 0.7, 0.7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yf5fn"]
+size = Vector3(0.7, 0.7, 0.7)
+
+[node name="Cube" type="RigidBody3D" unique_id=457449100]
+script = ExtResource("1_7ufek")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1424711964]
+mesh = SubResource("BoxMesh_g4v7s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=314860262]
+shape = SubResource("BoxShape3D_yf5fn")

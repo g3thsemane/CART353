@@ -18,3 +18,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=1539260395]
 current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=1058763473]
+target_position = Vector3(0, 0, -3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1824264753]
+
+[node name="Inventory" type="Label" parent="CanvasLayer" unique_id=142019801]
+offset_left = 37.0
+offset_top = 587.0
+offset_right = 77.0
+offset_bottom = 610.0
