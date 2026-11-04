@@ -9,6 +9,12 @@ size = Vector3(20, 0.2, 20)
 [sub_resource type="BoxShape3D" id="BoxShape3D_57qmd"]
 size = Vector3(20, 0.2, 20)
 
+[sub_resource type="BoxMesh" id="BoxMesh_sugp2"]
+size = Vector3(20, 0.2, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jyhfs"]
+size = Vector3(20, 0.2, 20)
+
 [sub_resource type="BoxMesh" id="BoxMesh_fcnqv"]
 size = Vector3(20, 4, 0.2)
 
@@ -45,6 +51,15 @@ mesh = SubResource("BoxMesh_yf5fn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=167483043]
 shape = SubResource("BoxShape3D_57qmd")
+
+[node name="Ceiling" type="StaticBody3D" parent="." unique_id=850167982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0200806, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ceiling" unique_id=1678405026]
+mesh = SubResource("BoxMesh_sugp2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling" unique_id=1040904420]
+shape = SubResource("BoxShape3D_jyhfs")
 
 [node name="WallBack" type="StaticBody3D" parent="." unique_id=994840939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
@@ -105,6 +120,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0)
 
 [node name="Cube2" parent="." unique_id=1312304002 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+cube_id = 2
 
 [node name="Cube3" parent="." unique_id=132259515 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
+cube_id = 3

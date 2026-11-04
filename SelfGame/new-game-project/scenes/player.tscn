@@ -24,7 +24,7 @@ target_position = Vector3(0, 0, -3)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1824264753]
 
-[node name="Inventory" type="Label" parent="CanvasLayer" unique_id=142019801]
+[node name="InventoryLabel" type="Label" parent="CanvasLayer" unique_id=142019801]
 offset_left = 37.0
 offset_top = 587.0
 offset_right = 77.0
