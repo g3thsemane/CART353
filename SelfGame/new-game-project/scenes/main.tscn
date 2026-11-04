@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://clni3qdxarl63" path="res://scenes/cube.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://drid3kflvg8is" path="res://scenes/barrier.tscn" id="3_sugp2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_yf5fn"]
 size = Vector3(20, 0.2, 20)
@@ -54,6 +55,7 @@ shape = SubResource("BoxShape3D_57qmd")
 
 [node name="Ceiling" type="StaticBody3D" parent="." unique_id=850167982]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0200806, 0)
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ceiling" unique_id=1678405026]
 mesh = SubResource("BoxMesh_sugp2")
@@ -125,3 +127,6 @@ cube_id = 2
 [node name="Cube3" parent="." unique_id=132259515 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
 cube_id = 3
+
+[node name="Barrier" parent="." unique_id=498463161 instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5999999, -5)
