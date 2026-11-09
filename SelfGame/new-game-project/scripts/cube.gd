@@ -29,7 +29,8 @@ func register_use(action: String) -> void:
 
 	print("Cube ", cube_id, " used as: ", action)
 	print("Current classification: ", get_classification())
-
+	
+	
 
 func get_classification() -> String:
 
